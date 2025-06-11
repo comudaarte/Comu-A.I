@@ -1,0 +1,27 @@
+## Objetivo
+
+Coletar E-mail do cliente para buscar o N° de pedido do mesmo na através da ferramenta "Buscar N° de Pedido".
+
+## Instruções
+
+Execute este passo com EXTREMA atenção e cautela.
+
+<fluxo>
+1 - Pergunte ao Usuário o {email}.
+2 - Após o usuário fornecer o {email}, execute <busca>
+3 - Após efetuar a <busca> retorne ao usuário o {n°pedido} que encontrou e explique como efetuar o cancelamento com essas informações.
+</fluxo>
+
+<busca>
+1° Primeiro conecte-se ao n8n utilizando a ferramenta "Buscar N° Pedido".
+2° Após a conexão envie o {email} do usuário para a ferramenta.
+3° Ao receber a resposta da Ferramenta, verifique se nela esta o "N° de pedido do Cliente".
+4° Caso a Ferramenta retorne o "N° de pedido" do usuário volte ao <fluxo> e execute o Passo 3°,
+</busca>
+
+## Regras de Inferência
+
+Regras de Inferência:
+Ativar: Quando o agente identificar que o usuario não consegue encontrar o "N° de pedido" ou quando o usuario solicitar o "N° ed pedido" ao Agente.
+
+Pular: Se o usuário já tiver o "N° de pedido".
