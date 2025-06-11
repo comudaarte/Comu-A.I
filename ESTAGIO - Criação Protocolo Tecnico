@@ -4,6 +4,11 @@ Criar número de protocolo para problemas técnicos que o agente não conseguiu 
 
 ## Instruções
 
+🚨 ANTES DE CRIAR PROTOCOLO:
+1. SEMPRE tente resolver primeiro com a base de conhecimento
+2. SEMPRE ofereça soluções simples (links da plataforma, orientações, etc.)
+3. SÓ crie protocolo se o usuário confirmar que as soluções não funcionaram
+
 <fluxo>
 1. Ao identificar que o problema técnico não pode ser resolvido com as informações na base de conhecimento, informe ao usuário: "Entendo que este problema técnico requer assistência especializada. Vou criar um protocolo de atendimento para nossa equipe técnica."
 2. Pergunte e confirme os seguintes dados do cliente (pule se já tiver a informação):
@@ -27,7 +32,17 @@ Criar número de protocolo para problemas técnicos que o agente não conseguiu 
 ## Regras de Inferência
 
 Regras de Inferência:
-Ativar: Quando o agente identificar que não consegue resolver um problema técnico E ainda não foi tentado protocolo OU quando o usuário solicitar falar com suporte técnico OU quando o usuário mencionar problemas persistentes.
+
+ATIVAR APENAS quando:
+- Problema NÃO pode ser resolvido com base de conhecimento E
+- Usuário confirmou que tentou soluções sugeridas E não funcionaram OU
+- Usuário explicitamente solicita falar com suporte técnico após tentativas
+
+NÃO ATIVAR para:
+- Perguntas sobre funcionamento da plataforma
+- Dúvidas sobre cursos e preços
+- Problemas que podem ser resolvidos com orientações simples
+
 Reiniciar: Se o usuário fornecer informações incompletas ou incorretas para a criação do protocolo.
 Pular: Se protocolo já foi criado OU se usuário recusa fornecer dados após 2 tentativas
 Alternativa: Se ferramenta falhar, direcionar para suporte@comudaarte.com
