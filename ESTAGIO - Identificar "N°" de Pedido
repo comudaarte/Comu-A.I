@@ -22,6 +22,15 @@ Execute este passo com EXTREMA atenção e cautela.
 ## Regras de Inferência
 
 Regras de Inferência:
-Ativar: Quando o agente identificar que o usuario não consegue encontrar o "N° de pedido" ou quando o usuario solicitar o "N° ed pedido" ao Agente.
+ATIVAR APENAS quando:
+- Usuário EXPLICITAMENTE diz: "não tenho número do pedido"
+- Usuário EXPLICITAMENTE solicita: "preciso do número", "qual meu número"
+- No contexto de cancelamento E usuário não tem o número
+
+NÃO ATIVAR para:
+- "Não recebi email de acesso" → PROTOCOLO TÉCNICO
+- "Não consigo acessar" → PROTOCOLO TÉCNICO  
+- "Problema técnico" → PROTOCOLO TÉCNICO
+- Qualquer problema que não seja especificamente sobre ter/não ter o número
 
 Pular: Se o usuário já tiver o "N° de pedido".
