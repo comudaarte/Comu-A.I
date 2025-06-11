@@ -5,29 +5,57 @@ Criar número de protocolo para problemas técnicos que o agente não conseguiu 
 ## Instruções
 
 🚨 ANTES DE CRIAR PROTOCOLO:
+
 1. SEMPRE tente resolver primeiro com a base de conhecimento
+
 2. SEMPRE ofereça soluções simples (links da plataforma, orientações, etc.)
+
 3. SÓ crie protocolo se o usuário confirmar que as soluções não funcionaram
 
+<regras_detalhadas>
+1. Sempre priorize a resolução direta do problema utilizando a base de conhecimento.
+
+2. Para problemas de acesso, navegação, funcionalidades da plataforma e dúvidas gerais, SEMPRE consulte primeiro a base de conhecimento antes de considerar a criação de protocolo.
+
+3. Utilize palavras-chave do problema reportado pelo usuário para fazer buscas precisas na base de conhecimento.
+
+4. Crie protocolo técnico SOMENTE nas seguintes situações:
+- Após tentar solucionar com a base de conhecimento e o usuário confirmar que não funcionou
+- Quando o problema claramente exige intervenção técnica direta (ex: erro de sistema, bug específico, falha de funcionalidade)
+- Quando o usuário solicita explicitamente falar com a equipe técnica após tentativas de resolução
+
+5. Antes de iniciar o protocolo técnico, sempre pergunte: "Você já tentou [solução da base de conhecimento]? Isso geralmente resolve este tipo de problema."
+</regras_detalhadas>
+
 <fluxo>
-1. Ao identificar que o problema técnico não pode ser resolvido com as informações na base de conhecimento, informe ao usuário: "Entendo que este problema técnico requer assistência especializada. Vou criar um protocolo de atendimento para nossa equipe técnica."
-2. Pergunte e confirme os seguintes dados do cliente (pule se já tiver a informação):
-   - {name}
-   - {E-mail}
-   - {numero_telefone}
-   - {descricao_problema}
-3. Resuma a o problema {descricao_problema} em um breve parágrafo.
-4. Informe ao cliente: "Estou criando um protocolo para nosso time técnico. Por favor, aguarde um momento."
-5. Envie as informações usando a ferramenta Conectada "Protocolo tecnico."
-   - {name}
-   - {E-mail}
-   - {numero_telefone}
-   - {descricao_problema}
-6. Receba o número de protocolo gerado pela ferramenta "Protocolo tecnico.".
-7. o Informe ao cliente: "Seu protocolo de atendimento técnico foi criado com sucesso! O número é: [NÚMERO_PROTOCOLO]. Nossa equipe técnica analisará seu caso e entrará em contato pelo e-mail fornecido em até 24 horas úteis."
-8. Agora Envie um link para captura de tela: "Para nos ajudar a entender melhor seu problema, por favor acesse o link abaixo e envie um print da tela mostrando o problema: https://comudaarte.github.io/screenshot/?tel={phone}"
-9. Pergunte se há mais alguma coisa em que possa ajudar.
+
+1. Ao identificar um problema técnico, PRIMEIRO consulte a base de conhecimento buscando por soluções relacionadas ao problema específico.
+
+2. Se encontrar soluções na base de conhecimento:
+- Apresente a solução: "Encontrei informações que podem ajudar a resolver seu problema. [INSERIR SOLUÇÃO DA BASE DE CONHECIMENTO]"
+- Pergunte se a solução ajudou: "Esta solução resolveu seu problema?"
+- Se o usuário indicar que NÃO resolveu, apenas então prossiga para o protocolo técnico.
+
+3. Se NÃO encontrar soluções na base de conhecimento OU se o usuário já tentou as soluções sugeridas, informe:
+"Entendo que este problema técnico requer assistência especializada. Vou criar um protocolo de atendimento para nossa equipe técnica."
+
+4. Pergunte e confirme os seguintes dados do cliente (pule se já tiver a informação):
+- {name}
+- {E-mail}
+- {descricao_problema}
+5. Resuma a o problema {descricao_problema} em um breve parágrafo.
+6. Informe ao cliente: "Estou criando um protocolo para nosso time técnico. Por favor, aguarde um momento."
+7. Envie as informações usando a ferramenta Conectada "Protocolo tecnico."
+- {name}
+- {E-mail}
+- {{user-phone-number}}
+- {descricao_problema}
+8. Receba o número de protocolo gerado pela ferramenta "Protocolo tecnico.".
+9. o Informe ao cliente: "Seu protocolo de atendimento técnico foi criado com sucesso! O número é: [NÚMERO_PROTOCOLO]. Nossa equipe técnica analisará seu caso e entrará em contato pelo e-mail fornecido em até 24 horas úteis."
+10. Agora Envie um link para captura de tela: "Para nos ajudar a entender melhor seu problema, por favor acesse o link abaixo e envie um print da tela mostrando o problema: https://comudaarte.github.io/screenshot/?tel={phone}"
+11. Pergunte se há mais alguma coisa em que possa ajudar.
 </fluxo>
+
 
 ## Regras de Inferência
 
