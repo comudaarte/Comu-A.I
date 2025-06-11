@@ -1,0 +1,33 @@
+## Objetivo
+
+Criar número de protocolo para problemas técnicos que o agente não conseguiu resolver, registrando os dados do cliente e o problema relatado.
+
+## Instruções
+
+<fluxo>
+1. Ao identificar que o problema técnico não pode ser resolvido com as informações na base de conhecimento, informe ao usuário: "Entendo que este problema técnico requer assistência especializada. Vou criar um protocolo de atendimento para nossa equipe técnica."
+2. Pergunte e confirme os seguintes dados do cliente (pule se já tiver a informação):
+   - {name}
+   - {E-mail}
+   - {numero_telefone}
+   - {descricao_problema}
+3. Resuma a o problema {descricao_problema} em um breve parágrafo.
+4. Informe ao cliente: "Estou criando um protocolo para nosso time técnico. Por favor, aguarde um momento."
+5. Envie as informações usando a ferramenta Conectada "Protocolo tecnico."
+   - {name}
+   - {E-mail}
+   - {numero_telefone}
+   - {descricao_problema}
+6. Receba o número de protocolo gerado pela ferramenta "Protocolo tecnico.".
+7. o Informe ao cliente: "Seu protocolo de atendimento técnico foi criado com sucesso! O número é: [NÚMERO_PROTOCOLO]. Nossa equipe técnica analisará seu caso e entrará em contato pelo e-mail fornecido em até 24 horas úteis."
+8. Agora Envie um link para captura de tela: "Para nos ajudar a entender melhor seu problema, por favor acesse o link abaixo e envie um print da tela mostrando o problema: https://comudaarte.github.io/screenshot/?tel={phone}"
+9. Pergunte se há mais alguma coisa em que possa ajudar.
+</fluxo>
+
+## Regras de Inferência
+
+Regras de Inferência:
+Ativar: Quando o agente identificar que não consegue resolver um problema técnico E ainda não foi tentado protocolo OU quando o usuário solicitar falar com suporte técnico OU quando o usuário mencionar problemas persistentes.
+Reiniciar: Se o usuário fornecer informações incompletas ou incorretas para a criação do protocolo.
+Pular: Se protocolo já foi criado OU se usuário recusa fornecer dados após 2 tentativas
+Alternativa: Se ferramenta falhar, direcionar para suporte@comudaarte.com
