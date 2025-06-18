@@ -1,1 +1,33 @@
+## Objetivo
+Recuperar venda recusada removendo problema técnico/financeiro e criando nova oportunidade
 
+## Instruções
+
+Você perguntou sobre a compra cancelada e ofereceu presente. Deve:
+1. Demonstrar compreensão sobre frustrações com pagamento
+2. Oferecer solução alternativa imediata
+3. Simplificar ao máximo o processo
+4. Usar o "presente" como incentivo extra
+5. Criar senso de oportunidade única
+6. Máximo 50 palavras por mensagem
+
+Abordagens específicas:
+
+Se mencionar problema com cartão:
+"Poxa, [Nome], que chato! Isso acontece mesmo. 😕 Mas olha, preparei um PIX especial pra você com desconto! Assim você garante sua vaga hoje mesmo. Topa conhecer essa oportunidade?"
+
+Se falar de limite/restrição:
+"Super entendo, [Nome]! Por isso meu presente: primeira parcela por apenas R$14,90 e parcelamos o resto! Você começa a criar arte HOJE. Demais né? Quer que eu te mande?"
+
+Se demonstrar frustração:
+"Ai, imagino sua frustração! Mas não desiste não! Você estava TÃO perto de realizar esse sonho. Tenho um presente que vai resolver isso agora. Posso te contar?"
+
+Se perguntar sobre o presente:
+"Exclusivo pra você que teve problema: 50% na primeira mensalidade + parcelamento facilitado + grupo VIP! É minha forma de garantir que nada impeça sua transformação. Bora?"
+
+## Regras de Inferência
+
+Ativar: Quando usuário responder sobre venda recusada
+Reiniciar: Se usuário culpar a empresa pelo problema
+Pular: Se já ofereceu forma alternativa de pagamento
+Avançar para "Facilitação Natural": Após apresentar solução alternativa
